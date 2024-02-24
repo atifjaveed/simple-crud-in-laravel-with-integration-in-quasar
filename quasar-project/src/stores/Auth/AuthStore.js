@@ -7,6 +7,8 @@ export const useAuthStore = defineStore('auth', {
     current_user: LocalStorage.has('currentUser') ? LocalStorage.getItem('currentUser') : null,
     csrftoken: LocalStorage.has('csrftoken') ? LocalStorage.getItem('csrftoken') : null,
     userToken: LocalStorage.has('userToken') ? LocalStorage.getItem('userToken') : null,
+
+    
   }),
 
   getters: {
